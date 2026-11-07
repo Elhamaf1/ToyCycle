@@ -1,0 +1,165 @@
+/*==================================================
+                GOOGLE FONT
+==================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+/*==================================================
+                VARIABLES
+==================================================*/
+:root{
+    --primary:#F9AFAF;
+    --primary-dark:#6A89CC;
+    --beige:#F5B45F;
+    --light:#FDC570;
+
+    --secondary:#F8C291;
+    --second-dark:#F6E58D;
+    --ciel:#B8E2F5;
+    
+    --accent:#FFC107;
+    --danger:#EC1005;
+
+    --bg:#FFF8F1;
+    --border:#E6D7C8;
+    --muted:#F5EFE6;
+    --muted-foreground:#78716C;
+    --border:rgba(28,25,23,.12);
+    --danger:#EF4444;
+    --whatsapp:#25D366;
+    --radius:18px;
+    --shadow:0 10px 30px rgba(0,0,0,.08);
+}
+.favorisHeader{
+    text-align:center;
+    margin-bottom: 50px;
+}
+.sectionTitle{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--primary-dark);
+}
+.sectionText{
+    color:var(--muted-foreground);
+    font-size: 1rem;
+    line-height: 1.8rem;
+}
+.favoriCard{
+    position: relative;
+    border-radius: var(--radius);
+    border: none !important;
+    overflow: hidden;
+    background: white;
+    box-shadow: var(--shadow);
+    transition: .3s;
+    height: 100%;
+}
+.favoriCard:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.15);
+}
+.removeFavorite{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: white;
+    border: none;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    transition: .3s;
+    z-index: 2;
+}
+.removeFavorite i{
+    color: var(--danger);
+    font-size: 1.3rem;
+    transition: .3s;
+}
+.removeFavorite:hover{
+    background: var(--danger);
+    color: white;
+    transform: scale(1.1);
+}
+.removeFavorite:hover i{
+    background: var(--danger);
+    transform: scale(1.1);
+    color: white;
+}
+.favoriImage{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+.favoriBody{
+    padding: 22px;
+}
+.favoriBody h5{
+    font-size: 1.1rem;
+    font-weight: bold;
+    min-height: 45px;
+    margin-bottom: 15px;
+}
+.price{
+    color: var(--secondary);
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+.city{
+    color: var(--muted-foreground);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.city::before{
+    content: "📍";
+}
+.voirBtn{
+    display: block;
+    text-align: center;
+    border-radius: 12px;
+    cursor: pointer;
+    color: white;
+    background: var(--primary);
+    text-decoration: none;
+    padding: 12px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: .3s;
+}
+.voirBtn:hover{
+    background: var(--primary-dark);
+    transform: translateY(-4px);
+    color: white;
+}
+.voirPlusBtn{
+    background: var(--secondary);
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 14px 35px;
+    transition: .3s;
+}
+.voirPlusBtn:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.15);
+    background: var(--primary);
+}
+.removeFavorite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.removeFavorite i {
+    pointer-events: none;
+}
+
+.removeFavorite:focus {
+    outline: 2px solid var(--primary-dark);
+    outline-offset: 2px;
+}

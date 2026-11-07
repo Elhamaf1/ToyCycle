@@ -1,0 +1,22 @@
+
+# Fichiers confidentiels
+.env
+.env.*
+
+# Autoriser le modèle de configuration
+!.env.example
+
+# Dépendances Composer
+/vendor/
+
+# Fichiers temporaires
+*.log
+*.tmp
+
+# Sauvegardes
+*.sql
+*.bak
+
+# Ignorer les fichiers uploadés
+/uploads/*
+!/uploads/.gitkeep

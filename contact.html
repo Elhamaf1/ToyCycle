@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ToyCycle</title>
+        <link rel="stylesheet" href="css/form.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <main class="register-page">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-8">
+                        <div class="register-card">
+                            <div class="register-header">
+                                <h1>Contactez-nous</h1>
+                                <p>Une question, une suggestion ou un problème ?
+                                Remplissez le formulaire ci-dessous et notre équipe
+                                vous répondra dans les plus brefs délais.</p>
+                            </div>
+                            <form id="loginForm">
+                                <div class="mb-3">
+                                    <label for="prenom" class="form-label">Prénom</label>
+                                    <input 
+                                        type="text"
+                                        class="form-control"
+                                        id="prenom"
+                                        placeholder="votre prénom" 
+                                        required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="nom" class="form-label">Nom</label>
+                                    <input 
+                                        type="text"
+                                        id="nom"
+                                        class="form-control"
+                                        placeholder="votre nom"
+                                        required> 
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Adresse e-mail</label>
+                                    <input 
+                                        type="email"
+                                        id="email"
+                                        class="form-control"
+                                        placeholder="exemple@gmail.com"
+                                        required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="sujet" class="form-label">Sujet</label>
+                                    <select class="form-select"
+                                        id="sujet"
+                                        required>
+                                        <option value="">Choisir un sujet</option>
+                                        <option>Question générale</option>
+                                        <option>Problème technique</option>
+                                        <option>Signaler une annonce</option>
+                                        <option>Suggestion</option>
+                                        <option>Autre</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <input 
+                                        id="message"
+                                        class="form-control"
+                                        placeholder="Décrivez votre demande..."
+                                        required>
+                                </div>
+                                <button type="submit" class="register-btn">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                    Envoyer le message
+                                </button>
+                            </form>
+                            <div class="login-link">
+                                Vous préférez nous écrire directement ?
+                                <br><strong>contact@toycyle.ma</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/contact.js"></script>
+    </body>
+</html>

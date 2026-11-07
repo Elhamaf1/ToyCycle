@@ -1,0 +1,321 @@
+:root{
+
+    --primary:#F9AFAF;
+    --primary-dark:#6A89CC;
+    --beige:#F5B45F;
+    --light:#FDC570;
+
+    --secondary:#F8C291;
+    --second-dark:#F6E58D;
+    --ciel:#8b9cc3;
+    --white: #FFFFFF;
+    --accent:#FFC107;
+    --blue:#42A5F5;
+    --red:#f54c4c;
+
+    --bg:#FFF8F1;
+    --border:#E6D7C8;
+    --text:#3A2A18;
+    --muted:#F5EFE6;
+    --muted-foreground:#78716C;
+    --border:rgba(28,25,23,.12);
+    --danger:#EF4444;
+    --whatsapp:#25D366;
+    --radius:18px;
+    --shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.containerr{
+    width: 95%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 30px;
+    align-items: start;
+}
+.filtre{
+    width: 275px;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    background: var(--white);
+    border:1px solid var(--border);
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    position: sticky;
+    top: 80px;   
+    height: fit-content;
+    align-self: flex-start;
+}
+.opt{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+h4{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.lab{
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--foreground);
+}
+.select,
+input{
+    border-radius: 10px;
+    width: 250px;
+    height: 45px;
+    border:1px solid var(--border);
+    padding:0 12px;
+    margin-bottom: 10px;
+}
+.select:focus{
+    outline: none;
+    border: 3px solid var(--ciel);
+    box-shadow:0 0 0 3px rgba(76,175,80,.12);
+}
+.rechercheBtn{
+    background: var(--primary);
+    height: 45px;
+    width: 250px;
+    border-radius: 10px;
+    margin: auto;
+    border: none;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    padding:12px 22px;
+    transition:.3s;
+}
+.rechercheBtn:hover{
+    background:var(--primary-dark);
+}
+.retulBtn{
+    background: var(--muted);
+    height: 45px;
+    width: 250px;
+    border-radius: 10px;
+    margin: auto;
+    border: none;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    padding:12px 22px;
+    transition:.3s;
+}
+.retulBtn:hover{
+    background:#e7e0d6;
+}
+/*annonce*/
+.annonces{
+    padding: 20px;
+    width: 100%;
+}
+
+.annoncesTop{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.rechbtn{
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+.rechbtn input{
+    flex: 1;
+    border: none;
+    outline: none;
+    height: 55px;
+    padding: 0 20px;
+    font-size: 1rem;
+    background: transparent;
+
+}
+.rechbtn button{
+    background: var(--secondary);
+    border: none;
+    width: 70px;
+    height: 55px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+.rechbtn button:hover{
+    background: var(--second-dark);
+}
+.card{
+    position: relative;
+    border-radius: var(--radius) !important;
+    border: none !important;
+    overflow: hidden;
+    background: white;
+    box-shadow: var(--shadow);
+    transition: .3s;
+    height: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.15);
+}
+.removeFavorite{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: white;
+    border: none;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    transition: .3s;
+    z-index: 2;
+}
+.removeFavorite i{
+    color: var(--red);
+    font-size: 1.3rem;
+    transition: .3s;
+}
+.removeFavorite:hover{
+    background: var(--red);
+    color: white;
+}
+.removeFavorite i:hover{
+    background: var(--red);
+    transform: scale(1.1);
+    color: white;
+}
+.cardImage{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+.bodycard{
+    padding: 22px;
+}
+.bodycard h5{
+    font-size: 1.1rem;
+    font-weight: bold;
+    min-height: 45px;
+    margin-bottom: 15px;
+}
+.price{
+    color: var(--secondary);
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+.city{
+    color: var(--muted-foreground);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.city::before{
+    content: "📍";
+}
+.voirBtn{
+    display: block;
+    text-align: center;
+    border-radius: 12px;
+    cursor: pointer;
+    color: white;
+    background: var(--primary);
+    text-decoration: none;
+    padding: 12px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: .3s;
+}
+.voirBtn:hover{
+    background: var(--primary-dark);
+    transform: translateY(-4px);
+    color: white;
+}
+
+/* ============================================================
+   PAGINATION
+============================================================ */
+
+.pagination-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pagination button {
+    min-width: 42px;
+    height: 42px;
+    padding: 0 12px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: white;
+    color: var(--text);
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.pagination button:hover:not(:disabled) {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+    transform: translateY(-2px);
+}
+
+/* Page actuellement sélectionnée */
+.pagination button.active {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+}
+
+/* Bouton désactivé */
+.pagination button:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+/* Sur petit écran */
+@media (max-width: 576px) {
+
+    .pagination {
+        gap: 5px;
+    }
+
+    .pagination button {
+        min-width: 36px;
+        height: 36px;
+        padding: 0 8px;
+        font-size: .9rem;
+    }
+}

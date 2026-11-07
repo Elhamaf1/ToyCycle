@@ -1,0 +1,163 @@
+/*==================================================
+                GOOGLE FONT
+==================================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*==================================================
+                VARIABLES
+==================================================*/
+
+:root{
+
+    --primary:#F9AFAF;
+    --primary-dark:#6A89CC;
+    --beige:#F5B45F;
+    --light:#FDC570;
+
+    --secondary:#F8C291;
+    --second-dark:#F6E58D;
+    --ciel:#B8E2F5;
+    
+    --accent:#FFC107;
+    --danger:#EC1005;
+
+    --bg:#FFF8F1;
+    --border:#E6D7C8;
+    --muted:#F5EFE6;
+    --muted-foreground:#78716C;
+    --border:rgba(28,25,23,.12);
+    --danger:#EF4444;
+    --whatsapp:#25D366;
+    --radius:18px;
+    --shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+/*==================================================
+        📌CONDITIONS & CONFIDENTIALITÉ
+==================================================*/
+.terms-page{
+    padding: 80px;
+}
+.page-banner{
+    margin: 0px auto 60px;
+    max-width: 850px;
+}
+.page-banner h1{
+    font-weight: 700;
+    font-size: 2.7rem;
+    color: var(--primary-dark);
+    margin-bottom: 20px;
+}
+.page-banner p{
+    color: var(--muted-foreground);
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+.terms-card{
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    background: var(--white);
+    padding: 30px;
+    margin-bottom: 30px;
+    transition: .35s;
+    border-left: 5px solid transparent;
+}
+.terms-card:hover{
+    border-left-color: var(--secondary);
+    transform: translateY(-6px);
+}
+.terms-card h2{
+    color: var(--foreground);
+    font-size: 1.35rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+    gap: 15px;
+}
+.terms-card h2 i{
+    color: var(--secondary);
+    border-radius: 50%;
+    background: rgba(207, 158, 113, 0.132);
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 1.2rem;
+}
+.terms-card p{
+    color: var(--muted-foreground);
+    margin-bottom: 0;
+    line-height: 1.9;
+}
+.terms-card ul{
+    margin-top: 15px;
+    padding-left: 25px;
+}
+.terms-card li{
+    color: var(--muted-foreground);
+    margin-bottom: 12px;
+    line-height: 1.7;
+}
+.section-title{
+    
+    text-align: center;
+    margin: 70px auto 40px;
+}
+.section-title h2{
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--primary-dark);
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+.section-title p{
+    color: var(--muted-foreground);
+    line-height: 1.8rem;
+}
+
+/*=========================
+        CONTACT CARD
+=========================*/
+.contact-card{
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    text-align: center;
+    padding: 50px 35px;
+    margin-top: 70px;
+    background: linear-gradient(135deg,var(--secondary),var(--primary));
+}
+.contact-card h2{
+    color: white;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.contact-card h2 i {
+    margin-right: 10px;
+    color: white;
+}
+.contact-card p{
+    color: white;
+    margin: auto;
+    line-height: 1.9;
+    max-width: 700px;
+    margin-bottom: 35px;
+}
+.contact-btn{
+    border-radius: 40px;
+    background: white;
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 14px 35px;
+    transition: .35s;
+    display: inline-block;
+}
+.contact-btn:hover{
+    background: var(--primary-dark);
+    color: white;
+    transform: translateY(-4px);
+}

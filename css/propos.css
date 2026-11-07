@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+:root{
+
+    --primary:#F9AFAF;
+    --primary-dark:#6A89CC;
+    --beige:#F5B45F;
+    --light:#FDC570;
+
+    --secondary:#F8C291;
+    --second-dark:#F6E58D;
+    --ciel:#B8E2F5;
+    
+    --accent:#FFC107;
+    --danger:#EC1005;
+
+    --bg:#FFF8F1;
+    --border:#E6D7C8;
+    --muted:#F5EFE6;
+    --muted-foreground:#78716C;
+    --border:rgba(28,25,23,.12);
+    --danger:#EF4444;
+    --whatsapp:#25D366;
+    --radius:18px;
+    --shadow:0 10px 30px rgba(0,0,0,.08);
+}
+.about-card,
+.feature-card{
+    background: white;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 35px 25px;
+    text-align:center;
+    transition:.35s;
+    height:100%;
+    border: 1px solid transparent;
+}
+.about-card:hover{
+    transform: translateY(-10px);
+}
+.about-text{
+    color: var(--muted-foreground);
+    line-height: 1.8;
+}
+/*les icons*/
+.about-icon i,
+.feature-card i{
+    background-color: rgba(179, 141, 88, 0.12);
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 20px;
+    margin: auto;
+    font-size: 2rem;
+    color: var(--secondary);
+    transition:.35s;
+}
+.about-card h3{
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+.about-card p,
+.feature-card p{
+    color: var(--muted-foreground);
+    line-height: 1.8;
+}
+/*------- Pourquoi choisir ToyCycle ? ---------*/
+.feature-card:hover{
+    border-color: var(--secondary);
+    transform: translateY(-10px);
+    background-color: var(--secondary);
+}
+.feature-card:hover i{
+    background: white;
+    color: var(--secondary);
+}
+.fea-text{
+    color: var(--primary-dark);
+}
+.feature-card h5{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.feature-card:hover h5,
+.feature-card:hover p{
+    color: white;
+}
+/* statistique */
+.stat-card{
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    background: var(--muted);
+    padding: 35px 25px;
+    text-align:center;
+    transition:.35s;
+    height:100%;
+}
+.stat-card:hover{
+    transform: translateY(-8px);
+}
+.stat-card h2{
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--secondary);
+}
+.stat-card p{
+    color: var(--muted-foreground);
+    margin-top: 10px;
+}
+.about h1{
+    color: var(--primary-dark);
+ }
+.feature-card h2{
+    color: var(--primary-dark);
+}

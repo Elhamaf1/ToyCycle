@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ToyCycle</title>
+        <link rel="stylesheet" href="css/annonce.css">   
+        <link rel="stylesheet" href="css/hf.css">        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+<!--================ header part==============-->
+        <header class="header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!--logo-->
+                    <div class="col-lg-3 col-md-4 col-6"> 
+                        <a href="accueil.html" class="logo">
+                            <img src="images/logoo.png" alt="ToyCycle" class="logoimage">
+                            <span class="logotext">ToyCycle</span>
+                        </a>
+                    </div>
+                    <!--Menu-->
+                    <div class="col-lg-6 d-none d-lg-block">
+                        <nav class="navbar">
+                            <ul class="menu">
+                                <li><a href="accueil.html">Accueil</a></li>
+                                <li><a href="annonces.html">Annonces</a></li>
+                                <li><a href="propos.html">À propos</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                
+                    <!--Buttons-->
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="header-icons justify-content-end">
+                            <a href="publier.html" class="publierBtn">Publier</a>
+                            <!--Boutons menu-->
+                            <div class="dropdown header-menu">
+                                <button
+                                    class="menu-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="fa-solid fa-bars"></i>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <!-- Visible uniquement sur mobile -->
+                                    <li class="d-lg-none">
+                                        <a class="dropdown-item" href="accueil.html">
+                                            <i class="fa-solid fa-house me-2"></i>
+                                            Accueil</a>
+                                    </li>
+
+                                    <li class="d-lg-none">
+                                        <a class="dropdown-item" href="annonces.html">
+                                            <i class="fa-solid fa-list me-2"></i>
+                                            Annonces</a></li>
+
+                                    <li class="d-lg-none">
+                                        <a class="dropdown-item" href="propos.html">
+                                            <i class="fa-solid fa-circle-info me-2"></i>
+                                            À propos</a></li>
+
+                                    <li class="d-lg-none">
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="favoris.html">
+                                            <i class="fa-regular fa-heart"></i>favoris
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="mes_annonces.html">
+                                            <i class="fa-solid fa-box me-2"></i>
+                                            Mes annonces</a></li>
+                                    <li><a class="dropdown-item" href="se_connecter.html">
+                                            <i class="fa-regular fa-user"></i>Se connecter
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="containerr">
+            <!-- Menu-->
+            <nav class="filtre">
+                <h4>Filtres</h4>
+                <div class="opt">
+                    <label class="lab" for="categorie">Catégories</label>
+                    <select class="select" id="categorie">
+                        <option value="">Toutes</option>
+                        <option value="Lego">Lego</option>
+                        <option value="Puzzles">Puzzles</option>
+                        <option value="Jeux éducatifs">Jeux éducatifs</option>
+                        <option value="Livres">Livres</option>
+                        <option value="Peluches">Peluches</option>
+                        <option value="Véhicules">Véhicules</option>
+                        <option value="Jeux de société">Jeux de société</option>
+                        <option value="Jeux électroniques">Jeux électroniques</option>
+                        <option value="Bébé">Bébé</option>
+                        <option value="Construction">Construction</option>
+                        <option value="Sport">Sport</option>
+                        <option value="Plein air">Plein air</option>
+                    </select>
+                    <label class="lab" for="etat">État</label>
+                    <select class="select" id="etat">
+                        <option value="">Toutes</option>
+                        <option value="Neuf">Neuf</option>
+                        <option value="Comme neuf">Comme neuf</option>
+                        <option value="Bon état">Bon état</option>
+                        <option value="État moyen">État moyen</option>
+                    </select>
+
+                    <label class="lab" for="mode">Mode de transaction</label>
+                    <select class="select" id="mode">
+                        <option value="">Toutes</option>
+                        <option value="Vente">Vente</option>
+                        <option value="Échange">Échange</option>
+                    </select>
+                    <label class="lab" for="age">Tranche d'âge</label>
+                    <select class="select" id="age">
+                        <option value="">Toutes</option>
+                        <option value="0-2 ans">0-2 ans</option>
+                        <option value="3-5 ans">3-5 ans</option>
+                        <option value="6-8 ans">6-8 ans</option>
+                        <option value="9-12 ans">9-12 ans</option>
+                        <option value="13 ans au plus">13 ans au plus</option>
+                    </select>
+                    <label class="lab" for="ville">Ville</label>
+                    <select class="select" id="ville">
+                        <option value="">Toutes les villes</option>
+                        <option value="Casablanca">Casablanca</option>
+                        <option value="Rabat">Rabat</option>
+                        <option value="Marrakech">Marrakech</option>
+                        <option value="Fès">Fès</option>
+                        <option value="Tanger">Tanger</option>
+                        <option value="Agadir">Agadir</option>
+                        <option value="Meknès">Meknès</option>
+                        <option value="Oujda">Oujda</option>
+                        <option value="Tétouan">Tétouan</option>
+                        <option value="Laâyoune">Laâyoune</option>
+                        <option value="Dakhla">Dakhla</option>
+                        <option value="El Jadida">El Jadida</option>
+                        <option value="Nador">Nador</option>
+                        <option value="Kénitra">Kénitra</option>
+                        <option value="Settat">Settat</option>
+                        <option value="Safi">Safi</option>
+                        <option value="Chefchaouen">Chefchaouen</option>
+                        <option value="Essaouira">Essaouira</option>
+                        <option value="Taroudant">Taroudant</option>
+                        <option value="Ouarzazate">Ouarzazate</option>
+                        <option value="Errachidia">Errachidia</option>
+                        <option value="Larache">Larache</option>
+                        <option value="Beni Mellal">Beni Mellal</option>
+                        <option value="Mohammedia">Mohammedia</option>
+                        <option value="Al Hoceïma">Al Hoceïma</option>
+                        <option value="Taza">Taza</option>
+                        <option value="Khouribga">Khouribga</option>
+                        <option value="Guelmim">Guelmim</option>
+                        <option value="Ksar El Kebir">Ksar El Kebir</option>
+                        <option value="Sidi Ifni">Sidi Ifni</option>
+                        <option value="Azrou">Azrou</option>
+                        <option value="Midelt">Midelt</option>
+                    </select>
+                    <label class="lab" for="prix-min">Prix minimum</label>
+                    <input type="number" id="prix-min" placeholder="0">
+                    <label class="lab" for="prix-max">Prix maximum</label>
+                    <input type="number" id="prix-max" placeholder="1000">
+                    <!-- Button-->
+                    <button type="button" id="filterBtn" class ="rechercheBtn">Rechercher</button>
+                    <button type="button" id="resetBtn" class ="retulBtn">Réinitialiser</button>
+                </div>
+            </nav>
+            <main class="annonces">
+                <!-- Barre de recherche -->
+                <div class="annoncesTop">
+                <div class="rechbtn">
+                    <input type="text" id="searchInput" placeholder="Rechercher un jouet par le titre">
+                    <button type="button" id="search"><i class="fa-solid fa-search"></i></button>
+                </div>
+                </div>
+                <!-- Résultats -->
+                <div class="resultat">
+                    <h3 id="titreResultat"></h3>
+                    <span class="nmbrannonces" id="nombreAnnonces"></span>
+                </div>
+                <div>
+                    <!-- Cartes -->
+                    <div class="row g-4" id="annoncesContainer">
+                        
+                    </div>
+                </div>
+                    <!--PAGINATION-->
+                    <div class="pagination">
+                        <button id="prev">Précédent</button>
+                        <span id="page-number">Page 1 / 2</span>
+                        <button id="next">Suivant</button>
+                    </div>
+                </div>
+            </main>
+        
+
+
+        </div>
+        
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="container">
+                <div class="row gy-4">
+                    <!-- Logo -->
+                    <div class="col-lg-3 col-md-6">
+                        <h2 class="footer-logo">ToyCycle</h2>
+                        <p class="footer-text">
+                            Donnez une seconde vie aux jouets et faites le bonheur d'autres
+                    enfants grâce à ToyCycle, la plateforme dédiée 
+                    à l'échange et à la vente de jouets entre familles.
+                        </p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#"><i class="fab fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                    <!-- Liens utiles -->
+                    <div class="col-lg-2 col-md-6">
+                        <h5>Liens utiles</h5>
+                        <ul class="footer-links">
+                            <li><a href="accueil.html">Accueil</a></li>
+                            <li><a href="annonces.html">Annonces</a></li>
+                            <li><a href="propos.html">À propos</a></li>
+                            <li><a href="help.html">Help </a></li>
+                        </ul>
+                    </div>
+                    <!-- Mon compte -->
+                    <div class="col-lg-2 col-md-6">
+                        <h5>Mon compte</h5>
+                        <ul class="footer-links">
+                            <li><a href="se_connecter.html">Se connecter</a></li>
+                            <li><a href="creer_compte.html">S'inscrire</a></li>
+                            <li><a href="mes_annonces.html">Mes annonces</a></li>
+                            <li><a href="favoris.html">Favoris</a></li>
+                            <li><a href="se_connecter.html">Profil</a></li>
+                        </ul>
+                    </div>
+                    <!-- Aide -->
+                    <div class="col-lg-2 col-md-6">
+                        <h5>Aide</h5>
+                        <ul class="footer-links">
+                            <li><a href="contact.html">Nous contacter</a></li>
+                            <li><a href="conditions.html">Conditions d'utilisation</a></li>
+                            <li><a href="confidentialite.html">Politique de confidentialité</a></li>
+                        </ul>
+                    </div>
+                    <!-- Application -->
+                    <div class="col-lg-3 col-md-12">
+                        <h5>Télécharger l'application</h5>
+                        <div class="store-buttons">
+                            <a href="#">
+                                <img src="images/google-play.png" class="imggoogle"
+                                    alt="Google Play">
+                            </a>
+                            <a href="#">
+                                <img src="images/app-store.png" class="imgapp"
+                                    alt="App Store">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="text-center">
+                    © 2026 ToyCycle - Tous droits réservés.
+                </div>
+                
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/annonce.js"></script>
+    </body>
+</html>

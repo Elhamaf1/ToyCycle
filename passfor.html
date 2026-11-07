@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ToyCycle - Mot de passe oublié</title>
+
+    <link rel="stylesheet" href="css/form.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    >
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <main class="register-page">
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-6 col-md-8">
+
+                    <div class="register-card">
+
+                        <div class="register-header">
+
+                            <h1>Mot de passe oublié ?</h1>
+
+                            <p>
+                                Entrez votre adresse email pour recevoir
+                                un code de vérification.
+                            </p>
+
+                        </div>
+
+                        <form id="forgotPasswordForm">
+
+                            <div class="mb-4">
+
+                                <label
+                                    for="email"
+                                    class="form-label">
+                                    Adresse email
+                                </label>
+
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="email"
+                                    name="email"
+                                    placeholder="exemple@email.com"
+                                    required
+                                >
+
+                            </div>
+
+                            <div
+                                id="message"
+                                class="text-center mb-3">
+                            </div>
+
+                            <button
+                                type="submit"
+                                class="register-btn">
+
+                                <i class="fa-solid fa-envelope"></i>
+                                Envoyer le code
+
+                            </button>
+
+                        </form>
+
+                        <div class="login-link">
+
+                            <a href="se_connecter.html">
+                                <i class="fa-solid fa-arrow-left"></i>
+                                Retour à la connexion
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <script src="js/password.js"></script>
+
+</body>
+
+</html>
+

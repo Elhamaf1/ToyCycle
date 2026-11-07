@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+:root{
+
+    --primary:#F9AFAF;
+    --primary-dark:#6A89CC;
+    --beige:#F5B45F;
+    --light:#FDC570;
+
+    --secondary:#F8C291;
+    --second-dark:#F6E58D;
+    --ciel:#8b9cc3;
+    
+    --accent:#FFC107;
+    --blue:#42A5F5;
+    --red:#f54c4c;
+
+    --bg:#FFF8F1;
+    --border:#E6D7C8;
+    --text:#3A2A18;
+    --muted:#F5EFE6;
+    --muted-foreground:#78716C;
+    --border:rgba(28,25,23,.12);
+    --danger:#EF4444;
+    --whatsapp:#25D366;
+    --radius:18px;
+    --shadow:0 10px 30px rgba(0,0,0,.08);
+}
+.card{
+    border-radius: 50px;
+    background: white;
+    box-shadow: var(--shadow);
+    overflow:hidden;
+    transition:.3s;
+}
+.card:hover{
+    transform: translateY(-3px);
+}
+.card-body{
+    padding:2rem;
+}
+.card h2{
+    font-weight: 700;
+    color: var(--primary-dark);
+}
+.form-label{
+    font-weight:600;
+    margin-bottom:.4rem;
+}
+.form-control,
+.form-select{
+    border-radius: 12px;
+    height: 50px;
+    border: 1px solid #dcdcdc;
+    transition: .3s;
+    font-size: 1rem;
+}
+.form-control:focus,
+.form-select:focus{
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 .2rem rgba(175, 135, 76, 0.2);
+}
+.btn-success{
+    background: var(--primary);
+    border-radius: 12px;
+    color: white;
+    border: none;
+    font-weight: 600;
+    height: 52px;
+    transition: .3s;
+}
+.btn-success:hover{
+    background: var(--primary-dark);
+}
+input[type=file]{
+    padding: 12px;
+}
+#imagePreview{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+.preview{
+    width:110px;
+    height:110px;
+    border-radius:12px;
+    overflow:hidden;
+    position:relative;
+    border:2px solid #eee;
+}
+.preview img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.preview button{
+    position:absolute;
+    top:5px;
+    right:5px;
+    width:24px;
+    height:24px;
+    border:none;
+    border-radius:50%;
+    background:red;
+    color:white;
+    cursor:pointer;
+}
+.char-counter{
+    text-align:right;
+    font-size:.85rem;
+    color:#888;
+    margin-top:5px;
+}
+.hidden {
+    display: none;
+}

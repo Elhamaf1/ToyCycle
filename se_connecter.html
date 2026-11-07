@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ToyCycle</title>
+        <link rel="stylesheet" href="css/form.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <main class="register-page">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-8">
+                        <div class="register-card">
+                            <div class="register-header">
+                                <h1>Bienvenue !</h1>
+                                <p>Connectez-vous pour continuer.</p>
+                            </div>
+                            <form id="loginForm">
+                                <!-- Email -->
+                                <div class="mb-3">
+                                    <label
+                                        for="email"
+                                        class="form-label">
+                                        Email
+                                    </label>
+                                    <input
+                                        type="email"
+                                        class="form-control"
+                                        id="email"
+                                        placeholder="exemple@email.com"
+                                        required>
+                                </div>
+                                <!-- Mot de passe -->
+                                <div class="mb-3 position-relative">
+                                    <label
+                                        for="password"
+                                        class="form-label">
+                                        Mot de passe
+                                    </label>
+                                    <input
+                                        type="password"
+                                        class="form-control"
+                                        id="password"
+                                        placeholder="********"
+                                        required>
+                                    <i class="fa-solid fa-eye toggle-password"
+                                    data-target="password">
+                                    </i>
+                                </div>
+                                <div class="text-end mb-4">
+                                    <a href="passfor.html"
+                                    class="forgot-link">
+                                        Mot de passe oublié ?
+                                    </a>
+                                </div>
+                                <button
+                                    type="submit"
+                                    class="register-btn">
+                                    <i class="fa-solid fa-right-to-bracket"></i>
+                                    Se connecter
+                                </button>
+                            </form>
+                            <div class="login-link">
+                                Pas encore de compte ?
+                                <a href="creer_compte.html">
+                                    S'inscrire
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/js_connecter.js"></script>
+    </body>
+</html>

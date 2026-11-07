@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ToyCycle - Vérification</title>
+
+    <link rel="stylesheet" href="css/form.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    >
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body>
+
+    <main class="register-page">
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-6 col-md-8">
+
+                    <div class="register-card">
+
+
+                        <!-- ================================= -->
+                        <!-- HEADER -->
+                        <!-- ================================= -->
+
+                        <div class="register-header">
+
+                            <h1>
+                                Vérification
+                            </h1>
+
+                            <p>
+                                Un code de vérification a été envoyé
+                                à votre adresse email.
+                            </p>
+
+                        </div>
+
+
+                        <!-- ================================= -->
+                        <!-- FORMULAIRE -->
+                        <!-- ================================= -->
+
+                        <form id="verificationForm">
+
+
+                            <!-- ================================= -->
+                            <!-- CODE -->
+                            <!-- ================================= -->
+
+                            <div class="mb-4">
+
+                                <label
+                                    for="verificationCode"
+                                    class="form-label">
+
+                                    Code de vérification
+
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control text-center"
+                                    id="verificationCode"
+                                    name="verificationCode"
+                                    placeholder="Entrez le code"
+                                    maxlength="6"
+                                    inputmode="numeric"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <!-- ================================= -->
+                            <!-- NOUVEAU MOT DE PASSE -->
+                            <!-- ================================= -->
+
+                            <div class="mb-4">
+
+                                <label
+                                    for="nouveauMotDePasse"
+                                    class="form-label">
+
+                                    Nouveau mot de passe
+
+                                </label>
+
+
+                                <!-- IMPORTANT :
+                                     position-relative
+                                     permet de positionner
+                                     l'oeil dans le champ -->
+
+                                <div class="position-relative">
+
+                                    <input
+                                        type="password"
+                                        class="form-control"
+                                        id="nouveauMotDePasse"
+                                        name="nouveauMotDePasse"
+                                        placeholder="********"
+                                        minlength="8"
+                                        required
+                                    >
+
+
+                                    <i
+                                        class="fa-solid fa-eye toggle-password"
+                                        data-target="nouveauMotDePasse">
+                                    </i>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- ================================= -->
+                            <!-- CONFIRMATION -->
+                            <!-- ================================= -->
+
+                            <div class="mb-4">
+
+                                <label
+                                    for="confirmerMotDePasse"
+                                    class="form-label">
+
+                                    Confirmer le nouveau mot de passe
+
+                                </label>
+
+
+                                <div class="position-relative">
+
+                                    <input
+                                        type="password"
+                                        class="form-control"
+                                        id="confirmerMotDePasse"
+                                        name="confirmerMotDePasse"
+                                        placeholder="********"
+                                        minlength="8"
+                                        required
+                                    >
+
+
+                                    <i
+                                        class="fa-solid fa-eye toggle-password"
+                                        data-target="confirmerMotDePasse">
+                                    </i>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- ================================= -->
+                            <!-- MESSAGE -->
+                            <!-- ================================= -->
+
+                            <div
+                                id="message"
+                                class="text-center mb-3">
+                            </div>
+
+
+                            <!-- ================================= -->
+                            <!-- BOUTON -->
+                            <!-- ================================= -->
+
+                            <button
+                                type="submit"
+                                class="register-btn">
+
+                                <i class="fa-solid fa-lock"></i>
+
+                                Modifier le mot de passe
+
+                            </button>
+
+
+                        </form>
+
+
+                        <!-- ================================= -->
+                        <!-- RETOUR -->
+                        <!-- ================================= -->
+
+                        <div class="login-link">
+
+                            <a href="mot_de_passe_oublie.html">
+
+                                <i class="fa-solid fa-arrow-left"></i>
+
+                                Modifier l'adresse email
+
+                            </a>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <script src="js/password.js"></script>
+
+</body>
+
+</html>
